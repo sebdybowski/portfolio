@@ -1,0 +1,1 @@
+export const getClassName = (condition: any, className?: string | undefined) => (condition ? ` ${className || condition}` : '');
