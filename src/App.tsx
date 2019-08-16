@@ -17,7 +17,7 @@ const App: React.FC = () => {
             <Button inner="Portfolio" flavour="btn-primary" onClick={() => console.log('ddd')} />
           </div>
           <div className="col">
-            <Button inner="Contact Me" flavour="btn-primary" onClick={() => console.log('ddd')} />
+            <Button inner="Contact Me" flavour="btn-outline-secondary" onClick={() => console.log('ddd')} />
           </div>
         </div>
       </header>
