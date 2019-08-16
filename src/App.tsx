@@ -12,7 +12,14 @@ const App: React.FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-          <Button inner="ddd" flavour="btn-primary" onClick={() => console.log('ddd')} />
+        <div className="row">
+          <div className="col">
+            <Button inner="Portfolio" flavour="btn-primary" onClick={() => console.log('ddd')} />
+          </div>
+          <div className="col">
+            <Button inner="Contact Me" flavour="btn-primary" onClick={() => console.log('ddd')} />
+          </div>
+        </div>
       </header>
     </div>
   );

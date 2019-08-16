@@ -1,0 +1,582 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20190816.020106.12336.0.001.json",
+    "dumpEventTime": "2019-08-16T02:01:06Z",
+    "dumpEventTimeStamp": "1565913666998",
+    "processId": 12336,
+    "cwd": "C:\\Users\\Sebastian\\dev\\portfolio",
+    "commandLine": [
+      "C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\current\\node.exe",
+      "scripts/start.js"
+    ],
+    "nodejsVersion": "v12.5.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.5.0",
+      "v8": "7.5.288.22-node.14",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.5.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 1881515,
+        "nice": 0,
+        "sys": 1766984,
+        "idle": 8326218,
+        "irq": 155078
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 1881515,
+        "nice": 0,
+        "sys": 1766984,
+        "idle": 8326218,
+        "irq": 155078
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 1881515,
+        "nice": 0,
+        "sys": 1766984,
+        "idle": 8326218,
+        "irq": 155078
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 1881515,
+        "nice": 0,
+        "sys": 1766984,
+        "idle": 8326218,
+        "irq": 155078
+      }
+    ],
+    "host": "OMEGA"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff72cae6e09",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72caea704",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cae9728",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cbd2f5b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3b7e2e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3a017a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d23197c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d2398af",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d22fb43",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d22e3d4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d24ceb5",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d00321d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d460b1d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3fb205",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d484c63",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3ce35c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d4707e0",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d4fcc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d2901",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d3d24ec",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d27d27c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d27c196",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d396ff2",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cc44425",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cc3dab3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cbcf623",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cbc5869",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cc73027",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cc6fc0b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cc6f3ac",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cc6f574",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cb9c2b1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cbf6703",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72cabc8dc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff72d8ca8f8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ffe7e0b7bd4",
+      "symbol": "BaseThreadInitThunk+20"
+    },
+    {
+      "pc": "0x00007ffe7f08ce71",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 157122560,
+    "totalCommittedMemory": 157122560,
+    "usedMemory": 143291888,
+    "availableMemory": 2055034024,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047328,
+        "used": 1047304,
+        "available": 24
+      },
+      "old_space": {
+        "memorySize": 93466624,
+        "committedMemory": 93466624,
+        "capacity": 93309320,
+        "used": 82243080,
+        "available": 11066240
+      },
+      "code_space": {
+        "memorySize": 3309568,
+        "committedMemory": 3309568,
+        "capacity": 3140352,
+        "used": 2403040,
+        "available": 737312
+      },
+      "map_space": {
+        "memorySize": 4984832,
+        "committedMemory": 4984832,
+        "capacity": 4976912,
+        "used": 3716400,
+        "available": 1260512
+      },
+      "large_object_space": {
+        "memorySize": 53428224,
+        "committedMemory": 53428224,
+        "capacity": 53299800,
+        "used": 53299800,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550304,
+        "used": 550304,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 45.734,
+    "kernelCpuSeconds": 8.078,
+    "cpuConsumptionPercent": 1.38405,
+    "maxRss": 405815296,
+    "pageFaults": {
+      "IORequired": 614940,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 7201,
+      "writes": 238
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\Sebastian\\dev\\portfolio",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Sebastian\\AppData\\Roaming",
+    "BABEL_ENV": "development",
+    "COLORTERM": "true",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "OMEGA",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DEBUG_COLORS": "true",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_NO_ATTACH_CONSOLE": "true",
+    "FORCE_COLOR": "true",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Sebastian",
+    "INIT_CWD": "C:\\Users\\Sebastian\\dev\\portfolio",
+    "LOCALAPPDATA": "C:\\Users\\Sebastian\\AppData\\Local",
+    "LOGONSERVER": "\\\\OMEGA",
+    "MOCHA_COLORS": "1",
+    "NODE": "C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\current\\node.exe",
+    "NODE_ENV": "development",
+    "NODE_PATH": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"run\",\"start\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_cache_folder": "C:\\Users\\Sebastian\\scoop\\apps\\yarn\\current\\cache",
+    "npm_config_color": "always",
+    "npm_config_global_folder": "C:\\Users\\Sebastian\\scoop\\apps\\yarn\\current\\global",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.17.3 npm/? node/v12.5.0 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_config_yarn_offline_mirror": "C:\\Users\\Sebastian\\scoop\\apps\\yarn\\current\\mirror",
+    "npm_execpath": "C:\\Users\\Sebastian\\scoop\\apps\\yarn\\1.17.3\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "start",
+    "npm_lifecycle_script": "node scripts/start.js",
+    "npm_node_execpath": "C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\current\\node.exe",
+    "npm_package_babel_presets_0": "react-app",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_package_dependencies_babel_eslint": "10.0.2",
+    "npm_package_dependencies_babel_jest": "^24.8.0",
+    "npm_package_dependencies_babel_loader": "8.0.6",
+    "npm_package_dependencies_babel_plugin_named_asset_import": "^0.3.3",
+    "npm_package_dependencies_babel_preset_react_app": "^9.0.1",
+    "npm_package_dependencies_camelcase": "^5.2.0",
+    "npm_package_dependencies_case_sensitive_paths_webpack_plugin": "2.2.0",
+    "npm_package_dependencies_css_loader": "2.1.1",
+    "npm_package_dependencies_dotenv": "6.2.0",
+    "npm_package_dependencies_dotenv_expand": "4.2.0",
+    "npm_package_dependencies_eslint": "^6.1.0",
+    "npm_package_dependencies_eslint_config_react_app": "^5.0.1",
+    "npm_package_dependencies_eslint_loader": "2.2.1",
+    "npm_package_dependencies_eslint_plugin_flowtype": "3.13.0",
+    "npm_package_dependencies_eslint_plugin_import": "2.18.2",
+    "npm_package_dependencies_eslint_plugin_jsx_a11y": "6.2.3",
+    "npm_package_dependencies_eslint_plugin_react": "7.14.3",
+    "npm_package_dependencies_eslint_plugin_react_hooks": "^1.6.1",
+    "npm_package_dependencies_file_loader": "3.0.1",
+    "npm_package_dependencies_fs_extra": "7.0.1",
+    "npm_package_dependencies_html_webpack_plugin": "4.0.0-beta.5",
+    "npm_package_dependencies_identity_obj_proxy": "3.0.0",
+    "npm_package_dependencies_is_wsl": "^1.1.0",
+    "npm_package_dependencies_jest": "24.8.0",
+    "npm_package_dependencies_jest_environment_jsdom_fourteen": "0.1.0",
+    "npm_package_dependencies_jest_resolve": "24.8.0",
+    "npm_package_dependencies_jest_watch_typeahead": "0.3.1",
+    "npm_package_dependencies_mini_css_extract_plugin": "0.5.0",
+    "npm_package_dependencies_optimize_css_assets_webpack_plugin": "5.0.3",
+    "npm_package_dependencies_pnp_webpack_plugin": "1.5.0",
+    "npm_package_dependencies_postcss_flexbugs_fixes": "4.1.0",
+    "npm_package_dependencies_postcss_loader": "3.0.0",
+    "npm_package_dependencies_postcss_normalize": "7.0.1",
+    "npm_package_dependencies_postcss_preset_env": "6.7.0",
+    "npm_package_dependencies_postcss_safe_parser": "4.0.1",
+    "npm_package_dependencies_react": "^16.9.0",
+    "npm_package_dependencies_react_app_polyfill": "^1.0.2",
+    "npm_package_dependencies_react_dev_utils": "^9.0.3",
+    "npm_package_dependencies_react_dom": "^16.9.0",
+    "npm_package_dependencies_resolve": "1.12.0",
+    "npm_package_dependencies_resolve_url_loader": "3.1.0",
+    "npm_package_dependencies_sass_loader": "7.2.0",
+    "npm_package_dependencies_semver": "6.3.0",
+    "npm_package_dependencies_style_loader": "1.0.0",
+    "npm_package_dependencies_terser_webpack_plugin": "1.4.1",
+    "npm_package_dependencies_ts_pnp": "1.1.2",
+    "npm_package_dependencies_typescript": "3.5.3",
+    "npm_package_dependencies_url_loader": "2.1.0",
+    "npm_package_dependencies_webpack": "4.39.1",
+    "npm_package_dependencies_webpack_dev_server": "3.2.1",
+    "npm_package_dependencies_webpack_manifest_plugin": "2.0.4",
+    "npm_package_dependencies_workbox_webpack_plugin": "4.3.1",
+    "npm_package_dependencies__babel_core": "7.5.5",
+    "npm_package_dependencies__svgr_webpack": "4.3.2",
+    "npm_package_dependencies__typescript_eslint_eslint_plugin": "1.13.0",
+    "npm_package_dependencies__typescript_eslint_parser": "1.13.0",
+    "npm_package_dependencies__types_jest": "24.0.17",
+    "npm_package_dependencies__types_node": "12.7.2",
+    "npm_package_dependencies__types_react": "16.9.1",
+    "npm_package_dependencies__types_react_dom": "16.8.5",
+    "npm_package_description": "In the project directory, you can run:",
+    "npm_package_eslintConfig_extends": "react-app",
+    "npm_package_jest_collectCoverageFrom_0": "src/**/*.{js,jsx,ts,tsx}",
+    "npm_package_jest_collectCoverageFrom_1": "!src/**/*.d.ts",
+    "npm_package_jest_moduleFileExtensions_0": "web.js",
+    "npm_package_jest_moduleFileExtensions_1": "js",
+    "npm_package_jest_moduleFileExtensions_2": "web.ts",
+    "npm_package_jest_moduleFileExtensions_3": "ts",
+    "npm_package_jest_moduleFileExtensions_4": "web.tsx",
+    "npm_package_jest_moduleFileExtensions_5": "tsx",
+    "npm_package_jest_moduleFileExtensions_6": "json",
+    "npm_package_jest_moduleFileExtensions_7": "web.jsx",
+    "npm_package_jest_moduleFileExtensions_8": "jsx",
+    "npm_package_jest_moduleFileExtensions_9": "node",
+    "npm_package_jest_moduleNameMapper__react_native_": "react-native-web",
+    "npm_package_jest_moduleNameMapper______module___css_sass_scss__": "identity-obj-proxy",
+    "npm_package_jest_roots_0": "<rootDir>/src",
+    "npm_package_jest_setupFiles_0": "react-app-polyfill/jsdom",
+    "npm_package_jest_testEnvironment": "jest-environment-jsdom-fourteen",
+    "npm_package_jest_testMatch_0": "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "npm_package_jest_testMatch_1": "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}",
+    "npm_package_jest_transformIgnorePatterns_0": "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "npm_package_jest_transformIgnorePatterns_1": "^.+\\.module\\.(css|sass|scss)$",
+    "npm_package_jest_transform______css_": "<rootDir>/config/jest/cssTransform.js",
+    "npm_package_jest_transform_______js_jsx_ts_tsx__": "<rootDir>/node_modules/babel-jest",
+    "npm_package_jest_transform__________js_jsx_ts_tsx_css_json___": "<rootDir>/config/jest/fileTransform.js",
+    "npm_package_jest_watchPlugins_0": "jest-watch-typeahead/filename",
+    "npm_package_jest_watchPlugins_1": "jest-watch-typeahead/testname",
+    "npm_package_name": "portfolio",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "node scripts/build.js",
+    "npm_package_scripts_start": "node scripts/start.js",
+    "npm_package_scripts_test": "node scripts/test.js",
+    "npm_package_version": "0.1.0",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\Sebastian\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Sebastian\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\SEBAST~1\\AppData\\Local\\Temp\\yarn--1565909778665-0.5361858124174821;C:\\Users\\Sebastian\\dev\\portfolio\\node_modules\\.bin;C:\\Users\\Sebastian\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Users\\Sebastian\\AppData\\Local\\Yarn\\bin;C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\current\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\JetBrains\\PhpStorm 2019.1.2\\jbr\\\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2019.1.2\\jbr\\\\bin\\server;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Sebastian\\scoop\\apps\\yarn\\current\\Yarn\\bin;C:\\Users\\Sebastian\\scoop\\apps\\yarn\\current\\global\\node_modules\\.bin;C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\current\\bin;C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\current;C:\\Users\\Sebastian\\scoop\\shims;C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Sebastian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Sebastian\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\Users\\Sebastian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\SEBAST~1\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\SEBAST~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "OMEGA",
+    "USERDOMAIN_ROAMINGPROFILE": "OMEGA",
+    "USERNAME": "Sebastian",
+    "USERPROFILE": "C:\\Users\\Sebastian",
+    "windir": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false"
+  },
+  "sharedObjects": [
+    "C:\\Users\\Sebastian\\scoop\\apps\\nodejs\\current\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}
