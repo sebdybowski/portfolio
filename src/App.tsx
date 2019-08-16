@@ -1,12 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Button } from "./components/buttons/Button";
+import { Navbar } from "./components/navbar/Navbar";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const App: React.FC = () => {
   return (
     <div className="App">
+      <Navbar/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
