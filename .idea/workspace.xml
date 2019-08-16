@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96e28f3-57df-4a05-b262-4c9395f1d04d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/logo/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/router/Router.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/router/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menus/fullScreenMenu/FullScreenMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.20190816.020106.12336.0.001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.20190816.020106.7136.0.001.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +82,7 @@
       <updated>1565908480603</updated>
       <workItem from="1565908484162" duration="181000" />
       <workItem from="1565908689077" duration="5211000" />
-      <workItem from="1565957461750" duration="2780000" />
+      <workItem from="1565957461750" duration="3259000" />
     </task>
     <servers />
   </component>
