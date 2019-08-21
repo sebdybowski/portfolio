@@ -26,13 +26,12 @@ interface ButtonProps {
 export const Button: React.FC<ButtonProps> = ({ inner, type = 'button', size, flavour, block, active, disabled, customClassName, onClick }) =>
 	<button
 		className={
-			'btn'
-            + getClassName(size)
-            + getClassName(flavour)
-            + getClassName(block, 'btn-block')
-            + getClassName(active, 'active')
-            + getClassName(disabled, 'disabled')
-            + getClassName(customClassName)
+			`btn${getClassName(size)}
+			${getClassName(flavour)}
+			${getClassName(block, 'btn-block')}
+			${getClassName(active, 'active')}
+			${getClassName(disabled, 'disabled')}
+			${getClassName(customClassName)}`
 		}
 		type={type}
 		onClick={disabled ? noop : onClick}
