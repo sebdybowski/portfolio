@@ -6,6 +6,7 @@ module.exports = {
 	},
 	'extends': [
 		'eslint:recommended',
+    "plugin:react/recommended",
 		'plugin:@typescript-eslint/recommended'
 	],
 	'globals': {
@@ -47,6 +48,7 @@ module.exports = {
     "array-bracket-spacing": [
       "error",
       "always"
-    ]
+    ],
+    "react/prop-types": [0],
 	},
 };
