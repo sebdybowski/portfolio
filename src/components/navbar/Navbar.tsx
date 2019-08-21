@@ -1,7 +1,7 @@
 import React from 'react';
 import { Logo } from '../logo/Logo';
 
-export const Navbar = () => {
+export const Navbar: React.FC = () => {
 	return (<nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 		<span className="navbar-brand">
 			<Logo main={'seb dybowski'} caption={'artist & software developer'}/>
