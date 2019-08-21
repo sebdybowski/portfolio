@@ -11,7 +11,7 @@ type BootstrapButtonFlavours =
 
 type onClickType = (event: React.MouseEvent<HTMLElement>) => void;
 
-interface ButtonProps {
+type ButtonProps = {
     inner: string | object;
     type?: 'button' | 'submit';
     size?: 'btn-sm' | 'btn-lg';
