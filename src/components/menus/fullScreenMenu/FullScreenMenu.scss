@@ -1,0 +1,43 @@
+@import "../../../shared/styles/constants";
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.full-screen-menu {
+  padding: 4rem 0;
+  background: url("paint-bg-inverted.jpg");
+  background-size: cover;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: $zindex-modal;
+  animation: fadeIn 0.66s;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 8rem);
+  }
+  .main-row {
+    flex-grow: 1;
+  }
+  button.full-screen-menu-btn {
+    font-family: "Noto Sans Regular", sans-serif;
+    font-size: $h2-font-size;
+    color: $full-screen-menu-btn-text-color;
+    &:hover {
+      color: $full-screen-menu-btn-text-color-hover;
+    }
+    &.active {
+      color: $full-screen-menu-btn-text-color-hover;
+    }
+    &.lg {
+      font-size: $h1-font-size;
+    }
+    &.main {
+      margin: 0.5rem 0;
+      float: left;
+    }
+  }
+}

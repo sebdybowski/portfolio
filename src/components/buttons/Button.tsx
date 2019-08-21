@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import noop from 'lodash.noop';
 import { getClassName } from './utils';
 
@@ -12,7 +12,7 @@ type BootstrapButtonFlavours =
 type onClickType = (event: React.MouseEvent<HTMLElement>) => void;
 
 interface ButtonProps {
-    inner: string | object;
+    children: string | ReactNode;
     type?: 'button' | 'submit';
     size?: 'btn-sm' | 'btn-lg';
     flavour?: BootstrapButtonFlavours;
@@ -23,7 +23,7 @@ interface ButtonProps {
     onClick: onClickType;
 }
 
-export const Button: React.FC<ButtonProps> = ({ inner, type = 'button', size, flavour, block, active, disabled, customClassName, onClick }) =>
+export const Button: React.FC<ButtonProps> = ({ children, type = 'button', size, flavour, block, active, disabled, customClassName, onClick }) =>
 	<button
 		className={
 			`btn${getClassName(size)}
@@ -36,5 +36,6 @@ export const Button: React.FC<ButtonProps> = ({ inner, type = 'button', size, fl
 		type={type}
 		onClick={disabled ? noop : onClick}
 	>
-		{inner}
+		{/*TODO: Replace with children*/}
+		{children}
 	</button>;
