@@ -19,17 +19,17 @@ export const FullScreenMenu: React.FC = () => (
 					</Button>
 				</div>
 			</div>
-			<div className="row main-row">
+			<div className="row main-row align-content-center">
 				<div className="col">
 					<ul className="nav flex-column align-content-start">
 						<li className="nav-item">
-							<Button onClick={(): void => {}} flavour="btn-link" customClassName="full-screen-menu-btn lg main active">// Home</Button>
+							<Button onClick={(): void => {}} flavour="btn-link" customClassName="full-screen-menu-btn main float-left active">// Home</Button>
 						</li>
 						<li className="nav-item">
-							<Button onClick={(): void => {}} flavour="btn-link" customClassName="full-screen-menu-btn lg main">Portfolio</Button>
+							<Button onClick={(): void => {}} flavour="btn-link" customClassName="full-screen-menu-btn main float-left">Portfolio</Button>
 						</li>
 						<li className="nav-item">
-							<Button onClick={(): void => {}} flavour="btn-link" customClassName="full-screen-menu-btn lg main">Contact</Button>
+							<Button onClick={(): void => {}} flavour="btn-link" customClassName="full-screen-menu-btn main float-left">Contact</Button>
 						</li>
 					</ul>
 				</div>

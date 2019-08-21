@@ -32,12 +32,9 @@
     &.active {
       color: $full-screen-menu-btn-text-color-hover;
     }
-    &.lg {
-      font-size: $h1-font-size;
-    }
     &.main {
+      font-size: $h1-font-size * 1.5;
       margin: 0.5rem 0;
-      float: left;
     }
   }
 }
