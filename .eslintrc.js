@@ -47,5 +47,6 @@ module.exports = {
       "always"
     ],
     "react/prop-types": [0],
+    "prefer-template": "error",
 	},
 };
