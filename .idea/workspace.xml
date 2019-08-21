@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96e28f3-57df-4a05-b262-4c9395f1d04d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/menus/fullScreenMenu/FullScreenMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menus/fullScreenMenu/FullScreenMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menus/fullScreenMenu/FullScreenMenu.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +17,11 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/redux" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PVRowryje2MbYiqti4RHtLzw0Y" />
@@ -28,7 +32,8 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Users\Sebastian\dev\portfolio\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="ts.external.directory.path" value="D:\dev\portfolio\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -83,6 +88,8 @@
       <workItem from="1565908484162" duration="181000" />
       <workItem from="1565908689077" duration="5211000" />
       <workItem from="1565957461750" duration="3259000" />
+      <workItem from="1566414978922" duration="22000" />
+      <workItem from="1566415016315" duration="309000" />
     </task>
     <servers />
   </component>
