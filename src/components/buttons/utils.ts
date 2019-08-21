@@ -1,1 +1,4 @@
-export const getClassName = (condition: any, className?: string | undefined) => (condition ? ` ${className || condition}` : '');
+type stringFunction = (condition?: string | boolean, className?: string ) => string;
+
+export const getClassName: stringFunction = (condition, className) =>
+	(condition ? ` ${className || condition}` : '');
