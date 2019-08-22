@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.scss';
 import './shared/styles/core.scss';
-import logo from './logo.svg';
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
 import { Button } from './components/buttons/Button';
 import { Navbar } from './components/navbar/Navbar';
@@ -16,20 +15,24 @@ interface AppProps {
 }
 
 const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
-	<div className="App">
+	<div className="app h-100">
 		{ isMenuOpen && <FullScreenMenu isOpen={isMenuOpen} toggleMenu={toggleMenu}/> }
 		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
-		<header className="App-header">
-			<img src={logo} className="App-logo" alt="logo" />
-			<p>
-				Edit <code>src/App.tsx</code> and save to reload.
-			</p>
-			<div className="row">
+		<div className="container h-100">
+			<div className="row align-content-center h-100">
 				<div className="col">
-					<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)}>Open menu</Button>
+					<div className="jumbotron bg-transparent align-items-start">
+						<h1 className="display-4">Hello, world!</h1>
+						<p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+							attention to featured content or information.</p>
+						<hr className="my-4"/>
+						<p>It uses utility classes for typography and spacing to space content out within the larger
+							container.</p>
+						<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)} customClassName="btn-lg">Open menu</Button>
+					</div>
 				</div>
 			</div>
-		</header>
+		</div>
 	</div>
 );
 
