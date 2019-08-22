@@ -5,10 +5,11 @@ import { Logo } from '../../logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faCodepen, faTwitter, faArtstation, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { ToggleMenu } from './fullScreenMenuTypes';
 
 interface FullScreenMenuProps {
 	isOpen: boolean;
-	toggleMenu: (isOpen: boolean) => void;
+	toggleMenu: ToggleMenu;
 }
 
 export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, toggleMenu }) => (

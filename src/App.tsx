@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.scss';
+import './shared/styles/core.scss';
 import logo from './logo.svg';
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
 import { Button } from './components/buttons/Button';
@@ -6,18 +8,17 @@ import { Navbar } from './components/navbar/Navbar';
 import { FullScreenMenu } from './components/menus/fullScreenMenu/FullScreenMenu';
 import { isFullScreenMenuOpenSelector } from './redux/selectors/fullScreenMenuSelectors';
 import { toggleFullScreenMenuAction } from './redux/actions/fullScreenMenuActions';
-import './App.scss';
-import 'bootstrap/dist/css/bootstrap.css';
+import { ToggleMenu } from './components/menus/fullScreenMenu/fullScreenMenuTypes';
 
 interface AppProps {
-	isFullScreenMenuOpen: boolean;
-	toggleFullScreenMenu: (isOpen: boolean) => void;
+	isMenuOpen: boolean;
+	toggleMenu: ToggleMenu;
 }
 
-const AppComponent: React.FC<AppProps> = ({ isFullScreenMenuOpen, toggleFullScreenMenu }) => (
+const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 	<div className="App">
-		{ isFullScreenMenuOpen && <FullScreenMenu isOpen={isFullScreenMenuOpen} toggleMenu={toggleFullScreenMenu}/> }
-		<Navbar/>
+		{ isMenuOpen && <FullScreenMenu isOpen={isMenuOpen} toggleMenu={toggleMenu}/> }
+		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
 		<header className="App-header">
 			<img src={logo} className="App-logo" alt="logo" />
 			<p>
@@ -25,23 +26,27 @@ const AppComponent: React.FC<AppProps> = ({ isFullScreenMenuOpen, toggleFullScre
 			</p>
 			<div className="row">
 				<div className="col">
-					<Button flavour="btn-primary" onClick={(): void => toggleFullScreenMenu(isFullScreenMenuOpen)}>Open menu</Button>
+					<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)}>Open menu</Button>
 				</div>
 			</div>
 		</header>
 	</div>
 );
 
-const mapStateToProps: MapStateToProps<object, object, object> = state => ({
-	isFullScreenMenuOpen: isFullScreenMenuOpenSelector(state),
-});
-
-interface MapDispatch {
-	toggleFullScreenMenu?: (isOpen: boolean) => void;
+interface MappedProps {
+	isMenuOpen?: object;
 }
 
-const mapDispatchToProps: MapDispatchToProps<MapDispatch, object> = dispatch => ({
-	toggleFullScreenMenu: (isOpen): void => toggleFullScreenMenuAction(isOpen, dispatch),
+const mapStateToProps: MapStateToProps<MappedProps, object, object> = state => ({
+	isMenuOpen: isFullScreenMenuOpenSelector(state),
+});
+
+interface DispatchedProps {
+	toggleMenu?: ToggleMenu;
+}
+
+const mapDispatchToProps: MapDispatchToProps<DispatchedProps, object> = dispatch => ({
+	toggleMenu: (isMenuOpen): void => toggleFullScreenMenuAction(isMenuOpen, dispatch),
 });
 
 // eslint-disable-next-line

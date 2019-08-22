@@ -1,4 +1,4 @@
-@import "../../../shared/styles/constants";
+@import "../../../shared/styles/core";
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -23,8 +23,9 @@
     flex-grow: 1;
   }
   button.full-screen-menu-btn {
-    font-family: "Noto Sans Regular", sans-serif;
-    font-size: $h2-font-size;
+    font-family: "Roboto Regular", sans-serif;
+    font-weight: 100;
+    font-size: $h3-font-size;
     color: $full-screen-menu-btn-text-color;
     &:hover {
       color: $full-screen-menu-btn-text-color-hover;

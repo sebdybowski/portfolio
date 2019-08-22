@@ -1,13 +1,5 @@
+import { Action } from './actionTypes';
 import { TOGGLE_FULL_SCREEN_MENU } from '../reducers/fullScreenMenuReducer';
-
-interface TogglePayload {
-	isOpen?: boolean;
-}
-
-interface Action {
-	type: string;
-	payload: TogglePayload;
-}
 
 type Dispatch = (action: Action) => void;
 

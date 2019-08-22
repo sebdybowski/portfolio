@@ -1,0 +1,15 @@
+@import "../../shared/styles/core";
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  span {
+    align-self: flex-start;
+    &.main {
+      font-size: $h3-font-size;
+    }
+    &.caption {
+      font-size: $font-size-sm;
+    }
+  }
+}
