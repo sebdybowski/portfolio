@@ -6,7 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faCodepen, faTwitter, faArtstation, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-export const FullScreenMenu: React.FC = () => (
+interface FullScreenMenuProps {
+	isOpen: boolean;
+	toggleMenu: (isOpen: boolean) => void;
+}
+
+export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, toggleMenu }) => (
 	<nav className="full-screen-menu">
 		<div className="container">
 			<div className="row">
@@ -14,7 +19,7 @@ export const FullScreenMenu: React.FC = () => (
 					<Logo />
 				</div>
 				<div className="col col-auto float-right">
-					<Button onClick={(): void => {}} flavour="btn-link" customClassName="full-screen-menu-btn">
+					<Button onClick={(): void => toggleMenu(isOpen)} flavour="btn-link" customClassName="full-screen-menu-btn">
 						Close <FontAwesomeIcon icon={faTimes}/>
 					</Button>
 				</div>
