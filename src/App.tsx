@@ -28,7 +28,8 @@ const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 						<hr className="my-4"/>
 						<p>It uses utility classes for typography and spacing to space content out within the larger
 							container.</p>
-						<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)} customClassName="btn-lg">Open menu</Button>
+						<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)} customClassName="btn-lg mr-2">OPEN MENU</Button>
+						<Button flavour="btn-secondary" onClick={(): void => toggleMenu(isMenuOpen)} customClassName="btn-lg">OPEN MENU</Button>
 					</div>
 				</div>
 			</div>
