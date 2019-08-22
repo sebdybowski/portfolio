@@ -1,45 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import { connect, MapStateToProps } from 'react-redux';
+import './App.scss';
+import './shared/styles/core.scss';
+import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
 import { Button } from './components/buttons/Button';
 import { Navbar } from './components/navbar/Navbar';
 import { FullScreenMenu } from './components/menus/fullScreenMenu/FullScreenMenu';
 import { isFullScreenMenuOpenSelector } from './redux/selectors/fullScreenMenuSelectors';
-import './App.scss';
-import 'bootstrap/dist/css/bootstrap.css';
+import { toggleFullScreenMenuAction } from './redux/actions/fullScreenMenuActions';
+import { ToggleMenu } from './components/menus/fullScreenMenu/fullScreenMenuTypes';
 
 interface AppProps {
-	isFullScreenMenuOpen: string;
+	isMenuOpen: boolean;
+	toggleMenu: ToggleMenu;
 }
 
-const AppComponent: React.FC<AppProps> = ({ isFullScreenMenuOpen }) => {
-	console.log(isFullScreenMenuOpen);
-	return (
-		<div className="App">
-			{ true && <FullScreenMenu /> }
-			<Navbar/>
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-				Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<div className="row">
-					<div className="col">
-						<Button flavour="btn-primary" onClick={(): void => console.log('ddd')}>Portfolio</Button>
-					</div>
-					<div className="col">
-						<Button flavour="btn-outline-secondary" onClick={(): void => console.log('ddd')}>Contact Me</Button>
+const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
+	<div className="app h-100">
+		{ isMenuOpen && <FullScreenMenu isOpen={isMenuOpen} toggleMenu={toggleMenu}/> }
+		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
+		<div className="container h-100">
+			<div className="row align-content-center h-100">
+				<div className="col">
+					<div className="jumbotron bg-transparent align-items-start">
+						<h1 className="display-4">Hello, world!</h1>
+						<p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+							attention to featured content or information.</p>
+						<hr className="my-4"/>
+						<p>It uses utility classes for typography and spacing to space content out within the larger
+							container.</p>
+						<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)} customClassName="btn-lg">Open menu</Button>
 					</div>
 				</div>
-			</header>
+			</div>
 		</div>
-	);
-};
+	</div>
+);
 
-const mapStateToProps: MapStateToProps<AppProps, object, object> = state => ({
-	isFullScreenMenuOpen: isFullScreenMenuOpenSelector(state),
+interface MappedProps {
+	isMenuOpen?: object;
+}
+
+const mapStateToProps: MapStateToProps<MappedProps, object, object> = state => ({
+	isMenuOpen: isFullScreenMenuOpenSelector(state),
 });
 
-const App = connect(mapStateToProps)(AppComponent);
+interface DispatchedProps {
+	toggleMenu?: ToggleMenu;
+}
+
+const mapDispatchToProps: MapDispatchToProps<DispatchedProps, object> = dispatch => ({
+	toggleMenu: (isMenuOpen): void => toggleFullScreenMenuAction(isMenuOpen, dispatch),
+});
+
+// eslint-disable-next-line
+// @ts-ignore
+const App = connect(mapStateToProps, mapDispatchToProps)(AppComponent);
 
 export default App;
+

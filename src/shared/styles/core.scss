@@ -1,9 +1,17 @@
+@import 'constants';
+@import '~bootstrap';
+
 @font-face {
-  font-family: 'Noto Sans Bold';
-  src: url('../fonts/NotoSans-Bold.ttf') format('truetype');
+  font-family: 'Roboto Light', sans-serif;
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Noto Sans Regular';
-  src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
+  font-family: 'Roboto Regular', sans-serif;
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Medium', sans-serif;
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
 }
