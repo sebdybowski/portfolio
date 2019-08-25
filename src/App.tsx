@@ -17,7 +17,7 @@ interface AppProps {
 
 const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 	<div className="app h-100">
-		{ isMenuOpen && <FullScreenMenu isOpen={isMenuOpen} toggleMenu={toggleMenu}/> }
+		{ isMenuOpen && <FullScreenMenu /> }
 		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
 		<div className="container h-100">
 			<div className="row align-content-center justify-content-center h-100">
