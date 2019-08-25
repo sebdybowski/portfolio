@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "7.5.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
@@ -11,7 +10,6 @@
     "@svgr/webpack": "4.3.2",
     "@types/jest": "24.0.17",
     "@types/lodash": "^4.14.137",
-    "@types/lodash.noop": "^3.0.6",
     "@types/node": "12.7.2",
     "@types/ramda": "^0.26.19",
     "@types/react": "16.9.1",
@@ -75,7 +73,10 @@
     "terser-webpack-plugin": "1.4.1",
     "ts-pnp": "1.1.2",
     "typescript": "3.5.3",
-    "url-loader": "2.1.0",
+    "url-loader": "2.1.0"
+  },
+  "devDependencies" : {
+    "@babel/core": "7.5.5",
     "webpack": "4.39.1",
     "webpack-dev-server": "3.2.1",
     "webpack-manifest-plugin": "2.0.4",
@@ -153,8 +154,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "devDependencies": {
-    "lodash.noop": "^3.0.1"
   }
 }
