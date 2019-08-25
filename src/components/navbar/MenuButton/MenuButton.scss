@@ -1,0 +1,16 @@
+@import "../../../shared/styles/core";
+
+.menu-button {
+  &.open {
+    color: #B0B0B0;
+    &:hover {
+      color: white;
+    }
+  }
+  &.closed {
+    color: #606060;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
