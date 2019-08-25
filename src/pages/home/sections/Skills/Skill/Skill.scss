@@ -1,0 +1,6 @@
+.skill {
+  & .progress, & .progress-bar {
+    border-radius: 3rem;
+    height: 1.2rem;
+  }
+}

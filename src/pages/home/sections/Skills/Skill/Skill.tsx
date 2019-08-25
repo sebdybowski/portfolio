@@ -9,7 +9,7 @@ interface SkillProps {
 }
 
 export const Skill: React.FC<SkillProps> = ({ title, percentage, skillSet }) => (
-	<div>
+	<div className="skill">
 		<h3>{title}{` ${percentage}%`}</h3>
 		<div className="progress">
 			<div
