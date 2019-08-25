@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.scss';
 import { Logo } from '../logo/Logo';
-import { Button } from '../buttons/Button';
+import { MenuButton } from './MenuButton/MenuButton';
 
 interface NavbarProps {
 	isMenuOpen: boolean;
@@ -17,17 +17,8 @@ export const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
 					caption={'artist & software developer'}
 				/>
 			</span>
-			<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span className="navbar-toggler-icon"/>
-			</button>
-
-			<div className="collapse navbar-collapse" id="navbarSupportedContent">
-				<div className="navbar-nav ml-auto">
-					<li className="nav-item">
-						<Button onClick={(): void => toggleMenu(isMenuOpen)}>more +</Button>
-					</li>
-				</div>
+			<div className="navbar-nav ml-auto">
+				<MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 			</div>
 		</div>
 	</nav>

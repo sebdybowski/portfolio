@@ -12,8 +12,8 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: $zindex-modal;
-  animation: fadeIn 0.66s;
+  z-index: $zindex-sticky;
+  animation: fadeIn 0.33s linear;
   .container {
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     flex-grow: 1;
   }
   button.full-screen-menu-btn {
-    font-family: "Roboto Regular", sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 100;
     font-size: $h3-font-size;
     color: $full-screen-menu-btn-text-color;
