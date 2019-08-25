@@ -7,7 +7,8 @@
 
 .full-screen-menu {
   padding: 4rem 0;
-  background: url("paint-bg-inverted.jpg");
+  //background: url("paint-bg-inverted.jpg");
+  background: rgba(0,0,0, 0.9);
   background-size: cover;
   position: fixed;
   width: 100vw;
@@ -26,12 +27,12 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 100;
     font-size: $h3-font-size;
-    color: $full-screen-menu-btn-text-color;
+    color: $menu-open-text-color;
     &:hover {
-      color: $full-screen-menu-btn-text-color-hover;
+      color: white;
     }
     &.active {
-      color: $full-screen-menu-btn-text-color-hover;
+      color: white;
     }
     &.main {
       font-size: $h1-font-size * 1.5;
