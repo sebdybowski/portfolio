@@ -20,8 +20,8 @@ const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 		{ isMenuOpen && <FullScreenMenu isOpen={isMenuOpen} toggleMenu={toggleMenu}/> }
 		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
 		<div className="container h-100">
-			<div className="row align-content-center h-100">
-				<div className="col">
+			<div className="row align-content-center justify-content-center h-100">
+				<div className="col-8">
 					<div className="jumbotron bg-transparent align-items-start">
 						<h1 className="display-4">Hello, world!</h1>
 						<p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
@@ -35,7 +35,7 @@ const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 				</div>
 			</div>
 			<div className="row justify-content-center">
-				<div className="col-10">
+				<div className="col-8">
 					<Skills title={'My Skills'} />
 				</div>
 			</div>
