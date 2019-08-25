@@ -3,7 +3,7 @@
 .logo {
   display: flex;
   flex-direction: column;
-  color: #707070;
+  color: $menu-open-text-color;
   span {
     align-self: flex-start;
     &.main {
