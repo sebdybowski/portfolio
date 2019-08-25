@@ -8,5 +8,3 @@ export const MENU_BUTTON_STATES = {
 		ICON: 'add',
 	},
 };
-
-

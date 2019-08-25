@@ -2,15 +2,15 @@
 
 .menu-button {
   &.open {
-    color: #B0B0B0;
+    color: $menu-open-text-color;
     &:hover {
-      color: white;
+      color: $menu-open-text-color-active;
     }
   }
   &.closed {
-    color: #606060;
+    color: $menu-closed-text-color;
     &:hover {
-      color: $primary;
+      color: $menu-closed-text-color-active;
     }
   }
 }
