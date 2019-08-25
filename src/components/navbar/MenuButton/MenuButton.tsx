@@ -14,7 +14,7 @@ interface MenuButtonProps {
 export const MenuButton: React.FC<MenuButtonProps> = ({ isMenuOpen, toggleMenu }) => (
 	<Button
 		onClick={(): void => toggleMenu(isMenuOpen)}
-		customClassName={`menu-button${isMenuOpen ? ' open' : ' closed'}`}
+		className={`menu-button${isMenuOpen ? ' open' : ' closed'}`}
 		flavour="btn-link"
 		size={'btn-lg'}
 	>
