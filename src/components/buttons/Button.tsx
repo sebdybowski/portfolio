@@ -19,11 +19,11 @@ interface ButtonProps {
     block?: boolean;
     active?: boolean;
     disabled?: boolean;
-    customClassName?: string;
+    className?: string;
     onClick: onClickType;
 }
 
-export const Button: React.FC<ButtonProps> = ({ children, type = 'button', size, flavour, block, active, disabled, customClassName, onClick }) =>
+export const Button: React.FC<ButtonProps> = ({ children, type = 'button', size, flavour, block, active, disabled, className = '', onClick }) =>
 	<button
 		className={
 			`btn${getClassName(size)}
@@ -31,7 +31,7 @@ export const Button: React.FC<ButtonProps> = ({ children, type = 'button', size,
 			${getClassName(block, 'btn-block')}
 			${getClassName(active, 'active')}
 			${getClassName(disabled, 'disabled')}
-			${getClassName(customClassName)}`
+			${getClassName(className)}`
 		}
 		type={type}
 		onClick={disabled ? noop : onClick}

@@ -8,6 +8,7 @@ import { FullScreenMenu } from './components/menus/fullScreenMenu/FullScreenMenu
 import { isFullScreenMenuOpenSelector } from './redux/selectors/fullScreenMenuSelectors';
 import { toggleFullScreenMenuAction } from './redux/actions/fullScreenMenuActions';
 import { ToggleMenu } from './components/menus/fullScreenMenu/fullScreenMenuTypes';
+import { Skills } from './pages/home/sections/Skills/Skills';
 
 interface AppProps {
 	isMenuOpen: boolean;
@@ -28,9 +29,14 @@ const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 						<hr className="my-4"/>
 						<p>It uses utility classes for typography and spacing to space content out within the larger
 							container.</p>
-						<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)} customClassName="btn-lg mr-2">OPEN MENU</Button>
-						<Button flavour="btn-secondary" onClick={(): void => toggleMenu(isMenuOpen)} customClassName="btn-lg">OPEN MENU</Button>
+						<Button flavour="btn-primary" onClick={(): void => toggleMenu(isMenuOpen)} className="btn-lg text-capitalize mr-3">Portfolio</Button>
+						<Button flavour="btn-secondary" onClick={(): void => toggleMenu(isMenuOpen)} className="btn-lg text-capitalize">Contact me</Button>
 					</div>
+				</div>
+			</div>
+			<div className="row justify-content-center">
+				<div className="col-10">
+					<Skills title={'My Skills'} />
 				</div>
 			</div>
 		</div>

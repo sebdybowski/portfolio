@@ -1,4 +1,5 @@
 $primary: #4C1273;
+$primary-light: #906da8;
 
 $full-screen-menu-btn-text-color: #909090;
 $full-screen-menu-btn-text-color-hover: #f0f0f0;
@@ -6,4 +7,6 @@ $full-screen-menu-btn-text-color-hover: #f0f0f0;
 $font-family-base: 'Nunito Sans', sans-serif;
 
 $menu-open-text-color: #B0B0B0;
-$menu-closed-text-color: #606060;
+$menu-open-text-color-active: #FFFFFF;
+$menu-closed-text-color: #505050;
+$menu-closed-text-color-active: $primary;

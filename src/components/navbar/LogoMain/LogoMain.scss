@@ -1,0 +1,23 @@
+@import '../../../shared/styles/core';
+
+.logo__main {
+  &--primary {
+    font-weight: bold;
+  }
+  &--open {
+    .logo__main--primary {
+      color: $primary-light;
+    }
+    .logo__main--secondary {
+      color: $light;
+    }
+  }
+  &--closed {
+    .logo__main--primary {
+      color: $primary;
+    }
+    .logo__main--secondary {
+      color: $dark;
+    }
+  }
+}

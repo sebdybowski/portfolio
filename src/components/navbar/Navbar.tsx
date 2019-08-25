@@ -2,6 +2,8 @@ import React from 'react';
 import './Navbar.scss';
 import { Logo } from '../logo/Logo';
 import { MenuButton } from './MenuButton/MenuButton';
+import { NAVBAR_LABELS } from './constants';
+import { LogoMain } from './LogoMain/LogoMain';
 
 interface NavbarProps {
 	isMenuOpen: boolean;
@@ -13,8 +15,8 @@ export const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
 		<div className="container">
 			<span className="navbar-brand">
 				<Logo
-					main={<span><span className="text-primary">seb</span><span>dybowski</span></span>}
-					caption={'artist & software developer'}
+					main={<LogoMain isMenuOpen={isMenuOpen} />}
+					caption={NAVBAR_LABELS.LOGO.CAPTION}
 				/>
 			</span>
 			<div className="navbar-nav ml-auto">
