@@ -1,4 +1,4 @@
-#Webd zmiana wersji php
+#Change php version
 AddHandler php7.3-fastcgi php 
 
 #Enforce https
