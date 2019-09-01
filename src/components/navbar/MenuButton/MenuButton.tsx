@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './MenuButton.scss';
 import { MENU_BUTTON_STATES } from './constants';
 import { Button } from '../../buttons/Button';
@@ -11,7 +11,7 @@ interface MenuButtonProps {
 	toggleMenu: (isOpen: boolean) => void;
 }
 
-export const MenuButton: React.FC<MenuButtonProps> = ({ isMenuOpen, toggleMenu }) => (
+export const MenuButton: FC<MenuButtonProps> = ({ isMenuOpen, toggleMenu }) => (
 	<Button
 		onClick={(): void => toggleMenu(isMenuOpen)}
 		className={`menu-button${isMenuOpen ? ' open' : ' closed'}`}

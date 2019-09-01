@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, FC } from 'react';
 import { map } from 'ramda';
 import './Skill.scss';
 
@@ -8,8 +8,8 @@ interface SkillProps {
 	skillSet?: Array<string>;
 }
 
-export const Skill: React.FC<SkillProps> = ({ title, percentage, skillSet }) => (
-	<div className="skill">
+export const Skill: FC<SkillProps> = ({ title, percentage, skillSet }) => (
+	<div className="skill mb-4">
 		<h3>{title}{` ${percentage}%`}</h3>
 		<div className="progress">
 			<div
@@ -22,7 +22,7 @@ export const Skill: React.FC<SkillProps> = ({ title, percentage, skillSet }) => 
 			<div className="card-body">
 				{
 					skillSet && map(
-						skill => <span>{`${skill}, `}</span>,
+						skill => <span key={skill}>{`${skill}, `}</span>,
 						skillSet,
 					)
 				}

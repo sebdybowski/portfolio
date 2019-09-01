@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, FC } from 'react';
 import './Logo.scss';
 
 interface LogoProps {
@@ -7,7 +7,7 @@ interface LogoProps {
 	className?: string;
 }
 
-export const Logo: React.FC<LogoProps> = ({ main, caption, className }) =>
+export const Logo: FC<LogoProps> = ({ main, caption, className }) =>
 	<header className={`logo ${className}`}>
 		<span className="main">{main}</span>
 		<span className="caption">{caption}</span>
