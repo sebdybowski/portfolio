@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './App.scss';
 import './shared/styles/core.scss';
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
@@ -9,18 +9,19 @@ import { isFullScreenMenuOpenSelector } from './redux/selectors/fullScreenMenuSe
 import { toggleFullScreenMenuAction } from './redux/actions/fullScreenMenuActions';
 import { ToggleMenu } from './components/menus/fullScreenMenu/fullScreenMenuTypes';
 import { Skills } from './pages/home/sections/Skills/Skills';
+import { About } from './pages/home/sections/About/About';
 
 interface AppProps {
 	isMenuOpen: boolean;
 	toggleMenu: ToggleMenu;
 }
 
-const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
+const AppComponent: FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 	<div className="app h-100">
 		{ isMenuOpen && <FullScreenMenu /> }
 		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
 		<div className="container h-100">
-			<div className="row align-content-center justify-content-center h-100">
+			<div className="row align-content-center justify-content-center h-100 mb-4">
 				<div className="col-8">
 					<div className="jumbotron bg-transparent align-items-start">
 						<h1 className="display-4">Hello, world!</h1>
@@ -34,8 +35,13 @@ const AppComponent: React.FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
 					</div>
 				</div>
 			</div>
+			<div className="row justify-content-center mb-4">
+				<div className="col-7">
+					<About />
+				</div>
+			</div>
 			<div className="row justify-content-center">
-				<div className="col-8">
+				<div className="col-7">
 					<Skills title={'My Skills'} />
 				</div>
 			</div>

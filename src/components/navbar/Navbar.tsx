@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './Navbar.scss';
 import { Logo } from '../logo/Logo';
 import { MenuButton } from './MenuButton/MenuButton';
@@ -10,7 +10,7 @@ interface NavbarProps {
 	toggleMenu: (isOpen: boolean) => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
+export const Navbar: FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
 	<nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" id="navbar">
 		<div className="container">
 			<span className="navbar-brand">

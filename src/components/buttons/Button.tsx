@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, FC } from 'react';
 import { noop } from 'lodash';
 import { getClassName } from './utils';
 
@@ -23,7 +23,7 @@ interface ButtonProps {
     onClick: onClickType;
 }
 
-export const Button: React.FC<ButtonProps> = ({ children, type = 'button', size, flavour, block, active, disabled, className = '', onClick }) =>
+export const Button: FC<ButtonProps> = ({ children, type = 'button', size, flavour, block, active, disabled, className = '', onClick }) =>
 	<button
 		className={
 			`btn${getClassName(size)}

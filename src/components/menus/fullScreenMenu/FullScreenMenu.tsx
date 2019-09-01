@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './FullScreenMenu.scss';
 import { Button } from '../../buttons/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faCodepen, faTwitter, faArtstation, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-export const FullScreenMenu: React.FC = () => (
+export const FullScreenMenu: FC = () => (
 	<nav className="full-screen-menu">
 		<div className="container">
 			<div className="row main-row align-content-center">
