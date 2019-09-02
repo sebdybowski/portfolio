@@ -11,12 +11,12 @@ export const Home: FC = () => (
 			</div>
 		</div>
 		<div className="row justify-content-center pt-4 pb-4">
-			<div className="col-7">
+			<div className="col-8">
 				<About />
 			</div>
 		</div>
 		<div className="row justify-content-center">
-			<div className="col-7">
+			<div className="col-8">
 				<Skills title={'My Skills'} />
 			</div>
 		</div>
