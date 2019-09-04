@@ -12,14 +12,14 @@ export const Footer: FC = () => (
 		<h5>This page is open-source, click <Link url={REPOSITORY_URL} target="_blank">
 			<strong>here</strong>
 		</Link> to view repository! <MaterialIcon icon="mood" /></h5>
-		<p className="pt-2">
+		<div className="mb-2">
 			<span>Proudly <strong>developed</strong> with: </span>
 			<Libraries libraries={TECH_STACK} />
-		</p>
-		<p>
+		</div>
+		<div className="mb-2">
 			<span>& <strong>maintained</strong> with: </span>
 			<Libraries libraries={BUILD_STACK} />
-		</p>
+		</div>
 		<span className="text-primary">{getCurrentYear()}</span>
 	</footer>
 );
