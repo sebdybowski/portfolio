@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Hero, About, Skills, Footer } from './sections';
+import { Hero, About, Skills, Footer, SocialMediaBar } from './sections';
 
 export const Home: FC = () => (
 	<div className="home">
@@ -17,6 +17,7 @@ export const Home: FC = () => (
 			</div>
 		</div>
 		<div className="container-fluid p-0">
+			<SocialMediaBar />
 			<Footer />
 		</div>
 	</div>
