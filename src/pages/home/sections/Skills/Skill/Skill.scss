@@ -1,6 +1,35 @@
+@import '../../../../../shared/styles/core';
+
 .skill {
   & .progress, & .progress-bar {
     border-radius: 3rem;
     height: 1.2rem;
+  }
+  &--toggler {
+    cursor: pointer;
+    padding: 0.25rem 1rem;
+    transition: font-size 0.1s ease-out;
+    &:hover {
+      color: $primary;
+    }
+  }
+  &--card.card {
+    border-radius: 0.66rem;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.33s ease-out, height 0.33s ease-out;
+    & > .card-body {
+      height: 0;
+    }
+  }
+  &--card {
+    &__expanded.card {
+      transition: opacity 0.33s ease-out, height 0.33s ease-out;
+      opacity: 1;
+      height: auto;
+      & > .card-body {
+        height: auto;
+      }
+    }
   }
 }

@@ -7,7 +7,7 @@ import { Link, MaterialIcon } from '../../../../components';
 import { REPOSITORY_URL } from '../../../../shared/constants/url';
 
 export const Footer: FC = () => (
-	<footer className="footer text-center vh-50 p-4">
+	<footer className="footer text-center vh-50 p-5">
 		<h1>seb<strong className="text-primary">dybowski</strong>.com</h1>
 		<h5>This page is open-source, click <Link url={REPOSITORY_URL} target="_blank">
 			<strong>here</strong>
