@@ -8,7 +8,7 @@ import { REPOSITORY_URL } from '../../../../shared/constants/url';
 
 export const Footer: FC = () => (
 	<footer className="footer text-center vh-50 p-4">
-		<h1>sebdybowski.com</h1>
+		<h1>seb<strong className="text-primary">dybowski</strong>.com</h1>
 		<h5>This page is open-source, click <Link url={REPOSITORY_URL} target="_blank">here</Link> to view repository! <MaterialIcon icon="mood" /></h5>
 		<p>
 			<span>Proudly <strong>developed</strong> with: </span>
@@ -16,6 +16,6 @@ export const Footer: FC = () => (
 			<span>& <strong>maintained</strong> with: </span>
 			<Libraries libraries={BUILD_STACK} />
 		</p>
-		<span>{getCurrentYear()}</span>
+		<span className="text-primary">{getCurrentYear()}</span>
 	</footer>
 );
