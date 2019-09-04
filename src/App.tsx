@@ -15,7 +15,7 @@ interface AppProps {
 }
 
 const AppComponent: FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
-	<div className="app h-100">
+	<div className="app">
 		{ isMenuOpen && <FullScreenMenu /> }
 		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
 		<Router />
