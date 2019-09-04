@@ -6,10 +6,10 @@ import { SOCIAL_MEDIA_ITEMS } from './constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const SocialMediaBar: FC = () => (
-	<section className="social-media-bar social-media-bar__primary text-center w-100 p-2">
+	<section className="social-media-bar social-media-bar__primary text-center w-100 p-3">
 		{
 			map(
-				item => <span className="social-media-bar--item">
+				item => <span className="social-media-bar--item" key={item.VALUE}>
 					<Link url={item.URL} target="_blank">
 						<FontAwesomeIcon icon={item.ICON} />
 					</Link>

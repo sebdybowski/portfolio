@@ -13,7 +13,7 @@ export const Libraries: FC<LibrariesProps> = ({ libraries }) => (
 		{
 			map(
 				library => (
-					<span className="text-primary">
+					<span className="text-primary" key={path([ 'LABEL' ], library)}>
 						<Link
 							url={path([ 'URL' ], library)}
 							target="_blank"
