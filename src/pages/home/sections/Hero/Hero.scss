@@ -1,4 +1,6 @@
 .hero {
-  background: url("../../../../shared/images/paint-bg.jpg") fixed;
-  background-size: cover;
+  &--section {
+    background: url("../../../../shared/images/paint-bg.jpg") fixed;
+    background-size: cover;
+  }
 }

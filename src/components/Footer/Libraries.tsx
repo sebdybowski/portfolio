@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { map, path } from 'ramda';
-import { Link } from '../../../../components';
-import { isLastElementInArray } from '../../../../shared/utils/arrayUtils';
-import { SimpleArrayType } from '../../../../shared/types/arrayTypes';
+import { Link } from '../index';
+import { isLastElementInArray } from '../../shared/utils/arrayUtils';
+import { SimpleArrayType } from '../../shared/types/arrayTypes';
 
 interface LibrariesProps {
 	libraries: SimpleArrayType;
