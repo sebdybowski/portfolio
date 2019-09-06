@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import './Footer.scss';
-import { getCurrentYear } from '../../../../shared/utils/dateUtils';
+import { getCurrentYear } from '../../shared/utils/dateUtils';
 import { BUILD_STACK, TECH_STACK } from './constants';
 import { Libraries } from './Libraries';
-import { Link, MaterialIcon } from '../../../../components';
-import { REPOSITORY_URL } from '../../../../shared/constants/url';
+import { Link, MaterialIcon } from '../';
+import { REPOSITORY_URL } from '../../shared/constants/url';
 
 export const Footer: FC = () => (
 	<footer className="footer text-center vh-50 p-5">

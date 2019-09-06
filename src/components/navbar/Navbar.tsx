@@ -11,7 +11,7 @@ interface NavbarProps {
 }
 
 export const Navbar: FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
-	<nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" id="navbar">
+	<nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
 		<div className="container">
 			<span className="navbar-brand">
 				<Logo
