@@ -18,15 +18,16 @@
     opacity: 0;
     height: 0;
     transition: opacity 0.33s ease-out, height 0.33s ease-out;
+    overflow: hidden;
     & > .card-body {
       height: 0;
     }
   }
   &--card {
     &__expanded.card {
-      transition: opacity 0.33s ease-out, height 0.33s ease-out;
+      transition: opacity 0.33s ease-in, height 0.33s ease-in;
       opacity: 1;
-      height: 8rem;
+      height: 200px;
       & > .card-body {
         height: auto;
       }

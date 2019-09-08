@@ -11,17 +11,19 @@ interface NavbarProps {
 }
 
 export const Navbar: FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
-	<nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
-		<div className="container">
-			<span className="navbar-brand">
-				<Logo
-					main={<LogoMain isMenuOpen={isMenuOpen} />}
-					caption={NAVBAR_LABELS.LOGO.CAPTION}
-				/>
-			</span>
-			<div className="navbar-nav ml-auto">
-				<MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+	<div className="navbar--wrapper">
+		<nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+			<div className="container">
+				<span className="navbar-brand">
+					<Logo
+						main={<LogoMain isMenuOpen={isMenuOpen} />}
+						caption={NAVBAR_LABELS.LOGO.CAPTION}
+					/>
+				</span>
+				<div className="navbar-nav ml-auto">
+					<MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</div>
 );
