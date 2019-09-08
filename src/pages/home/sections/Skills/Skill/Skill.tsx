@@ -1,6 +1,7 @@
 import React, { ReactNode, FC, useState } from 'react';
 import { map } from 'ramda';
 import './Skill.scss';
+import { ProgressBar } from '../../../../../components';
 
 interface SkillProps {
 	title: string | ReactNode;
@@ -24,13 +25,7 @@ export const Skill: FC<SkillProps> = ({ title, percentage, skillSet }) => {
 			</div>
 			<div className="row mb-2">
 				<div className="col">
-					<div className="progress">
-						<div
-							className="progress-bar progress-bar-striped progress-bar-animated"
-							role="progressbar"
-							style={{ width: `${percentage}%` }}
-						/>
-					</div>
+					<ProgressBar percentage={percentage} animated striped />
 				</div>
 			</div>
 			<div className="row mb-2">

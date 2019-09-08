@@ -3,12 +3,12 @@ import Portrait from './portrait.jpg';
 import './About.scss';
 
 export const About: FC = () => (
-	<section className="card" id="about">
-		<div className="row no-gutters">
-			<div className="col-md-4 justify-content-center align-items-center p-4" style={{ display: 'flex' }}>
+	<section className="card about mt-5">
+		<div className="row">
+			<div className="col col-12 col-lg-4 d-flex justify-content-center align-items-center">
 				<img src={Portrait} className="card-img rounded-circle" alt="portrait" />
 			</div>
-			<div className="col-md-8 p-4">
+			<div className="col col-12 col-lg-8">
 				<div className="card-body">
 					<h5 className="card-title">seb dybowski</h5>
 					<p className="card-text">
