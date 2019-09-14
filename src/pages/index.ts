@@ -1,2 +1,3 @@
 export { Home } from './home/Home';
+export { Contact } from './contact/Contact';
 export { Error404 } from './Error404/Error404';

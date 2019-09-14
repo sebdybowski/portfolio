@@ -20,10 +20,10 @@ interface ButtonProps {
     active?: boolean;
     disabled?: boolean;
     className?: string;
-    onClick: onClickType;
+    onClick?: onClickType;
 }
 
-export const Button: FC<ButtonProps> = ({ children, type = 'button', size = '', flavour = '', block, active, disabled, className = '', onClick }) =>
+export const Button: FC<ButtonProps> = ({ children, type = 'button', size = '', flavour = '', block, active, disabled = false, className = '', onClick = noop }) =>
 	<button
 		className={classNames(
 			'btn',
@@ -38,6 +38,7 @@ export const Button: FC<ButtonProps> = ({ children, type = 'button', size = '', 
 		)}
 		type={type}
 		onClick={disabled ? noop : onClick}
+		disabled={disabled}
 	>
 		{/*TODO: Replace with children*/}
 		{children}

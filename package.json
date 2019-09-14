@@ -20,6 +20,7 @@
     "@types/react-router-dom": "^4.3.5",
     "@types/redux-logger": "^3.0.7",
     "@types/redux-mock-store": "^1.0.1",
+    "@types/yup": "^0.26.23",
     "@typescript-eslint/eslint-plugin": "^2.1.0",
     "@typescript-eslint/parser": "^2.1.0",
     "babel-eslint": "10.0.3",
@@ -43,6 +44,7 @@
     "eslint-plugin-react": "7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
     "file-loader": "3.0.1",
+    "formik": "^1.5.8",
     "fs-extra": "8.1.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
@@ -81,7 +83,8 @@
     "terser-webpack-plugin": "1.4.1",
     "ts-pnp": "1.1.2",
     "typescript": "3.5.3",
-    "url-loader": "2.1.0"
+    "url-loader": "2.1.0",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
