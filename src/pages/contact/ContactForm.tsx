@@ -23,7 +23,7 @@ export const ContactForm: FC = () => (
 						<Input
 							name="email"
 							placeholder="your email address"
-							type="text"
+							type="email"
 							label={<span><span className="text-success">great job!</span> now, enter your <strong className="text-primary">e-mail address</strong></span>}
 						/>
 					}

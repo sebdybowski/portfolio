@@ -16,7 +16,7 @@ export const Input: FC<InputProps> = ({ name, type, placeholder, label }) => (
 			// eslint-disable-next-line
 			// @ts-ignore
 			({ field, form, ...props }) => (
-				<div className="form-group pb-4 mb-2 input ">
+				<div className="form-group pb-4 mb-2 input">
 					{ label && <label htmlFor={`${name}--input`}>{label}</label> }
 					<input
 						className={classNames(
