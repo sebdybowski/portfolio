@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
 import './FullScreenMenu.scss';
-import { Button } from '../../buttons/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faCodepen, faTwitter, faArtstation, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { SocialMediaBar } from '../..';
 
 export const FullScreenMenu: FC = () => (
 	<nav className="full-screen-menu">
@@ -11,13 +9,13 @@ export const FullScreenMenu: FC = () => (
 				<div className="col">
 					<ul className="nav flex-column align-content-start">
 						<li className="nav-item">
-							<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn main float-left active">// Home</Button>
+							<a href="/" className="full-screen-menu-btn">home</a>
 						</li>
 						<li className="nav-item">
-							<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn main float-left">Portfolio</Button>
+							<a href="/contact" className="full-screen-menu-btn">contact</a>
 						</li>
 						<li className="nav-item">
-							<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn main float-left">Contact</Button>
+							<a href="/portfolio" className="full-screen-menu-btn">portfolio</a>
 						</li>
 					</ul>
 				</div>
@@ -25,21 +23,7 @@ export const FullScreenMenu: FC = () => (
 			<div className="row">
 				<div className="col">
 					<nav className="nav">
-						<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn">
-							<FontAwesomeIcon icon={faGithub}/>
-						</Button>
-						<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn">
-							<FontAwesomeIcon icon={faCodepen}/>
-						</Button>
-						<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn">
-							<FontAwesomeIcon icon={faTwitter}/>
-						</Button>
-						<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn">
-							<FontAwesomeIcon icon={faArtstation}/>
-						</Button>
-						<Button onClick={(): void => {}} flavour="btn-link" className="full-screen-menu-btn">
-							<FontAwesomeIcon icon={faLinkedin}/>
-						</Button>
+						<SocialMediaBar className="social-media-bar__transparent"/>
 					</nav>
 				</div>
 			</div>

@@ -4,6 +4,9 @@
   &__primary {
     background: linear-gradient(135deg, $primary-light, $primary);
   }
+  &__transparent {
+    background: transparent;
+  }
   &--item {
     & > * {
       font-size: 1.5rem;
