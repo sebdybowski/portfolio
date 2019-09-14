@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import './Contact.scss';
 import { ContactForm } from './ContactForm';
 
 export const Contact: FC = () => (
