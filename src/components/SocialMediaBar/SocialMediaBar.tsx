@@ -1,12 +1,22 @@
 import React, { FC } from 'react';
+import classNames from 'classnames';
 import './SocialMediaBar.scss';
 import { map } from 'ramda';
 import { Link } from '../';
 import { SOCIAL_MEDIA_ITEMS } from './constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const SocialMediaBar: FC = () => (
-	<section className="social-media-bar social-media-bar__primary text-center w-100 p-3">
+interface SocialMediaBarProps {
+	className?: string;
+}
+
+export const SocialMediaBar: FC<SocialMediaBarProps> = ({ className = '' }) => (
+	<section className={classNames(
+		'social-media-bar text-center w-100 p-3',
+		{
+			[className]: className,
+		}
+	)}>
 		<div className="row justify-content-center">
 			{
 				map(

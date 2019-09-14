@@ -26,7 +26,7 @@ export const Home: FC = () => (
 			)
 		}
 		<div className="container-fluid p-0">
-			<SocialMediaBar />
+			<SocialMediaBar className="social-media-bar__primary"/>
 			<Footer />
 		</div>
 	</div>
