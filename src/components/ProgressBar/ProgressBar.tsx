@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import classNames from 'classnames';
+import './ProgressBar.scss';
 
 interface ProgressBarProps {
 	percentage: number | string;
@@ -12,7 +13,7 @@ export const ProgressBar: FC<ProgressBarProps> = ({ percentage, striped = false,
 	<div className={`progress ${className}`}>
 		<div
 			className={classNames(
-				'progress-bar',
+				'progress-bar progress-bar__glow',
 				{
 					['progress-bar-striped']: striped,
 					['progress-bar-animated']: animated,
