@@ -18,7 +18,7 @@ const AppComponent: FC<AppProps> = ({ ...props }) => (
 	<div className="app">
 		<Navbar {...props} />
 		<Router>
-			<div>{ props.isMenuOpen && <FullScreenMenu {...props} /> }</div>
+			{ props.isMenuOpen && <FullScreenMenu {...props} /> }
 		</Router>
 	</div>
 );
