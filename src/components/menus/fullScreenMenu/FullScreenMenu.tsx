@@ -1,21 +1,28 @@
 import React, { FC } from 'react';
 import './FullScreenMenu.scss';
 import { SocialMediaBar } from '../..';
+import { Link } from 'react-router-dom';
+import { ToggleMenu } from './fullScreenMenuTypes';
 
-export const FullScreenMenu: FC = () => (
+interface FullScreenMenuProps {
+	isMenuOpen: boolean;
+	toggleMenu: ToggleMenu;
+}
+
+export const FullScreenMenu: FC<FullScreenMenuProps> = ({ toggleMenu, isMenuOpen }) => (
 	<nav className="full-screen-menu">
 		<div className="container">
 			<div className="row main-row align-content-center">
 				<div className="col">
 					<ul className="nav flex-column align-content-start">
 						<li className="nav-item">
-							<a href="/" className="full-screen-menu-btn">home</a>
+							<Link to="/" className="full-screen-menu-btn" onClick={() => toggleMenu(isMenuOpen)}>home</Link>
 						</li>
 						<li className="nav-item">
-							<a href="/contact" className="full-screen-menu-btn">contact</a>
+							<Link to="/contact" className="full-screen-menu-btn" onClick={() => toggleMenu(isMenuOpen)}>contact</Link>
 						</li>
 						<li className="nav-item">
-							<a href="/portfolio" className="full-screen-menu-btn">portfolio</a>
+							<Link to="/portfolio" className="full-screen-menu-btn" onClick={() => toggleMenu(isMenuOpen)}>portfolio</Link>
 						</li>
 					</ul>
 				</div>

@@ -14,11 +14,12 @@ interface AppProps {
 	toggleMenu: ToggleMenu;
 }
 
-const AppComponent: FC<AppProps> = ({ isMenuOpen, toggleMenu }) => (
+const AppComponent: FC<AppProps> = ({ ...props }) => (
 	<div className="app">
-		{ isMenuOpen && <FullScreenMenu /> }
-		<Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
-		<Router />
+		<Navbar {...props} />
+		<Router>
+			<div>{ props.isMenuOpen && <FullScreenMenu {...props} /> }</div>
+		</Router>
 	</div>
 );
 
