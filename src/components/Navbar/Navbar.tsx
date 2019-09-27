@@ -5,6 +5,7 @@ import { MenuButton } from './MenuButton/MenuButton';
 import { NAVBAR_LABELS } from './constants';
 import { LogoMain } from './LogoMain/LogoMain';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 interface NavbarProps {
 	isMenuOpen: boolean;
@@ -22,10 +23,12 @@ export const Navbar: FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
 	>
 		<div className="container">
 			<span className="navbar-brand">
-				<Logo
-					main={<LogoMain isMenuOpen={isMenuOpen} />}
-					caption={NAVBAR_LABELS.LOGO.CAPTION}
-				/>
+				<Link to="/">
+					<Logo
+						main={<LogoMain isMenuOpen={isMenuOpen} />}
+						caption={NAVBAR_LABELS.LOGO.CAPTION}
+					/>
+				</Link>
 			</span>
 			<div className="navbar-nav ml-auto">
 				<MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
