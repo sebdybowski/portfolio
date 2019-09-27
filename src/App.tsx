@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import './App.scss';
 import './shared/styles/core.scss';
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
-import { Navbar } from './components/navbar/Navbar';
+import { Navbar } from './components/Navbar/Navbar';
 import { FullScreenMenu } from './components/menus/fullScreenMenu/FullScreenMenu';
 import { isFullScreenMenuOpenSelector } from './redux/selectors/fullScreenMenuSelectors';
 import { toggleFullScreenMenuAction } from './redux/actions/fullScreenMenuActions';

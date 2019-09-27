@@ -1,5 +1,12 @@
 import { Contact, FAQ, Home, Portfolio } from '../../pages';
 
+export const ROUTE_NAME = {
+	HOME: 'HOME',
+	CONTACT: 'CONTACT',
+	PORTFOLIO: 'HOME',
+	FAQ: 'HOME',
+};
+
 export const ROUTES = [
 	{ VALUE: 'HOME', LABEL: 'home', PATH: '/', EXACT: true, COMPONENT: Home },
 	{ VALUE: 'CONTACT', LABEL: 'contact', PATH: '/contact', EXACT: true, COMPONENT: Contact },

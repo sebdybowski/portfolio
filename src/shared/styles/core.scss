@@ -8,7 +8,9 @@
   border: 0;
   border-radius: 3rem;
   padding: 0.5rem 3rem;
-  font-weight: lighter;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
   &.disabled {
     cursor: not-allowed;
     background: grey;
@@ -26,7 +28,9 @@
   border: 0;
   border-radius: 3rem;
   padding: 0.5rem 3rem;
-  font-weight: lighter;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
   &:hover {
     background: $gray-900;
   }
