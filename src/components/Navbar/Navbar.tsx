@@ -15,7 +15,7 @@ interface NavbarProps {
 export const Navbar: FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => (
 	<nav
 		className={classNames(
-			'navbar navbar-expand-lg sticky-top navbar-dark',
+			'navbar navbar-expand-lg fixed-top navbar-dark',
 			{
 				['navbar__is-open']: isMenuOpen,
 			}

@@ -1,6 +1,7 @@
+@import "../../shared/styles/core";
+
 .progress-bar {
   &__glow {
-    box-shadow: 0 0 4px purple;
-    position: absolute;
+    box-shadow: 0 0 4px $primary;
   }
 }
