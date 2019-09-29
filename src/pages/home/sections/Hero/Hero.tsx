@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const Hero: FC = () => (
 	<section className="hero d-flex align-items-center justify-content-center">
-		<div className="col col-12 col-md-8 m-auto">
+		<div className="col col-12 col-md-7 m-auto">
 			<div className="jumbotron bg-transparent m-auto p-0">
 				<h1 className="display-4">Hello, world!</h1>
 				<p className="lead">
