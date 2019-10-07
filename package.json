@@ -82,7 +82,7 @@
     "style-loader": "1.0.0",
     "terser-webpack-plugin": "2.1.0",
     "ts-pnp": "1.1.2",
-    "typescript": "3.5.3",
+    "typescript": "3.6.3",
     "url-loader": "2.1.0",
     "yup": "^0.27.0"
   },
