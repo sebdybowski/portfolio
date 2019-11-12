@@ -20,7 +20,10 @@ export const FullScreenMenu: FC<FullScreenMenuProps> = ({ toggleMenu, isMenuOpen
 					<div className="col">
 						<ul className="nav flex-column align-content-start text-center">
 							{ map(
-								route => <li className="nav-item pt-2 pb-2">
+								route => <li
+									key={route.VALUE}
+									className="nav-item pt-2 pb-2"
+								>
 									<Link
 										to={route.PATH}
 										className="full-screen-menu-btn"
