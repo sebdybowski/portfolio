@@ -87,7 +87,7 @@
     "yup": "^0.27.0"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
+    "@babel/core": "7.11.4",
     "webpack": "4.41.0",
     "webpack-dev-server": "3.8.0",
     "webpack-manifest-plugin": "2.1.2",
